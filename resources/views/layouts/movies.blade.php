@@ -17,8 +17,8 @@
 
 <body>
 
-    <main>
-        @yield('content')
+    <main class="mt-5">
+        @yield('movies-content')
     </main>
 
 </body>
