@@ -9,6 +9,10 @@ use App\Models\Movie;
 
 class PageController extends Controller
 {
+    public function homepage()
+    {
+        return view('home');
+    }
 
     public function index()
     {
