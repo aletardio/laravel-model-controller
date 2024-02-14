@@ -4,9 +4,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h2 class="text-center pb-5">
+                <h1 class="text-center pb-5">
                     I titoli dei film
-                </h2>
+                </h1>
             </div>
             <div class="row">
                 @foreach ($movies as $movie)
@@ -18,7 +18,10 @@
                                 <p class="text-body">Data di uscita: {{ $movie->date }}</p>
                                 <p class="text-body">Voto: {{ $movie->vote }}</p>
                             </div>
-                            <button class="card-button">More info</button>
+                            <button class="card-button"><a
+                                    class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                    href="{{ route('show_movie', ['id' => $movie->id]) }}">Altre
+                                    info</a></button>
                         </div>
                     </div>
                 @endforeach
